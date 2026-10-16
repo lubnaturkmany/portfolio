@@ -8,119 +8,207 @@
 </head>
 <body>
 
-    <header>
-    <nav>
-        <div>
-            <h2> Lubna Turkmani </h2>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav>
-</header>
-
-    <main>
+    <header class="header">
+        <nav class="navbar">
+            <h2 class="brand"> Lubna Turkmani </h2>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main id="main">
         <section id="home">
-    <div>
-        <h1>Lubna Turkmani</h1>
-        <h3>Full-Stack Developer</h3>
-        <p>
-            Welcome to my portfolio. I am a passionate developer
-            interested in creating modern and user-friendly web applications.
-        </p>
-        <img
-            src="images/lubna.png"
-            alt="Portrait of Lubna Turkmani"
-        >
-        <br>
-        <a href="#projects">View My Projects</a>
-    </div>
-</section>
-
-<section id="about">
-    <h2>About Me</h2>
-
-    <p>
-        I am a developer interested in building modern and responsive
-        web applications. I am currently learning and improving my
-        skills in web development, programming, databases, and Git.
-        I am interested in technologies such as HTML, CSS, JavaScript,
-        C#, SQL, and GitHub. My career goal is to become a skilled
-        full-stack developer and create useful, reliable, and
-        user-friendly applications.
-    </p>
-</section>
-
-<section id="skills">
-    <h2>My Skills</h2>
-
-    <ul class="skill-item">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>C#</li>
-        <li>SQL</li>
-        <li>Git and GitHub</li>
-    </ul>
-</section>
-
-<section id="projects">
-    <h2>My Projects</h2>
-    <div class="card-container">
-        <div class="card">
-            <h2>Smart Safety Vest</h2>
-            <img src="images/smart-vest.png" alt="Smart Safety Vest">
-            <p>SmartVest is an IoT-based safety system designed
-                 to improve industrial workers safety by monitoring
-                  hazardous environmental conditions,
-                   including gas leaks, high temperatures, and fire.
-                    The system uses sensors and GPS
-                     to collect environmental data and track workers
-                      locations, sending data to a web-based platform
-                       for real-time monitoring and alerts when
-                        dangerous conditions are detected.</p>
-            <h2>Technologies Used:</h2>
-            <ul>
-                <li>Hardware & IoT: ESP32, MQ-2 Gas Sensor, Flame Sensor, DS18B20 Temperature Sensor, NEO-6M GPS Module</li>
-                <li>Backend: Node.js, Express.js.</li>
-                <li>Database: MongoDB.</li>
-                <li>Frontend: React.js, Vite.</li>
-                <li>Communication & Security: HTTP, REST API, JWT Authentication, API Keys.</li>
+            <div class="container-inner">
+                <div class="portfolio-photo">
+                    <img class="media-photo"
+                    src="images/lubna.png"
+                    alt="Portrait of Lubna Turkmani"
+                    width="960" height="1280"
+                    >
+                </div>
+                <br>
+                <div class="description">
+                    <h3 class=" professional ">Full-Stack Developer</h3>
+                    <h1 class="name">Lubna Turkmani</h1>
+                    <p class="intro">
+                        Welcome to my portfolio. I am a passionate developer
+                        interested in creating modern and user-friendly
+                        web applications.
+                    </p>
+                    <br>
+                    <br>
+                    <a class="link-myProjects" href="#projects">View My Projects</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="about">
+            <div class="container-about">
+                <h2 class="text">About Me</h2>
+                    <p class="about-copy">
+                        I am a developer interested in building modern and responsive
+                        web applications. I am currently learning and improving my
+                        skills in web development, programming, databases, and Git.
+                        I am interested in technologies such as HTML, CSS, JavaScript,
+                        C#, SQL, and GitHub. My career goal is to become a skilled
+                        full-stack developer and create useful, reliable, and
+                        user-friendly applications.
+                    </p>
+            </div>
+        </section>
+        
+        <section id="skills">
+            <h2 class="text">My Skills</h2>
+            <ul class="skills-list">
+                <li class="skill-item">
+                    <div class="skill-icon">&lt;/&gt;</div>
+                   <h3>HTML</h3>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon">&lt;/&gt;</div>
+                    <h3>CSS</h3>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon">&lt;/&gt;</div>
+                    <h3>JavaScript</h3>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon">&lt;/&gt;</div>
+                    <h3>C#</h3>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon">&lt;/&gt;</div>
+                    <h3>SQL</h3>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon">&lt;/&gt;</div>
+                    <h3>Git and GitHub</h3>
+                </li>
             </ul>
-            <h2>GitHub Repository:</h2>
-            <a href="https://github.com/lubnaturkmany/SmartVest.git">GitHub Link</a>
-        </div>
-
-        <div class="card">
-            <h2>Portfolio Website</h2>
-            <img src="" alt="Portfolio Website">
-            <p>A personal website to showcase my skills,
-                projects, and experience.</p>
-            <h2>Technologies Used:</h2>    
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ul>
-            <h2>GitHub Repository:</h2>
-            <a href="https://github.com/lubnaturkmany/portfolio.git">GitHub Link</a>
-        </div>
-    </div>
-</section>
-
-<section id="contact">
-    <h2>My Contact</h2>
-    <a href="https://github.com/lubnaturkmany">GitHub</a>
-    <br>
-    <a href="https://www.linkedin.com/in/lubna-turkmany">LinkedIn</a>
-    <br>
-    <a href="mailto:lubnaturkmany@gmail.com">Email</a>
-</section>
+        </section>
+        
+        <section id="projects" class="projects-section">
+            <h2 class="text">My Projects</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="project-image">
+                        <img class="smart-image"
+                        src="images/smart-vest.png" alt="Smart Safety Vest">
+                    </div>
+                    <div class="project-content">
+                        <h2>Smart Safety Vest</h2>
+                        <p class="description">SmartVest is an IoT-based safety system designed
+                            to improve industrial workers safety by monitoring
+                            hazardous environmental conditions,
+                            including gas leaks, high temperatures, and fire.
+                            The system uses sensors and GPS
+                            to collect environmental data and track workers
+                            locations, sending data to a web-based platform
+                            for real-time monitoring and alerts when
+                            dangerous conditions are detected.
+                        </p>
+                            <ul class="project-tech">
+                                <li>ESP32</li>
+                                <li>MQ-2 Gas Sensor</li>
+                                <li>Flame Sensor</li>
+                                <li>DS18B20</li>
+                                <li>NEO-6M GPS Module</li>
+                                <li>Node.js</li>
+                                <li>Express.js</li>
+                                <li>MongoDB</li>
+                                <li>React.js</li>
+                                <li>Vite</li>
+                                <li>JWT Authentication</li>
+                            </ul>
+                            <a
+                            class="project-button" 
+                            href="https://github.com/lubnaturkmany/SmartVest.git"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >
+                            View on GitHub ↗
+                            </a>
+                    </div>
+                </div> 
+                    <div class="card">
+                        <div class="project-image">
+                        <img
+                        class="portfolio-image" 
+                        src="images/portfolio.png" alt="Portfolio Website">
+                        </div>
+                        <div class="project-content">
+                            <h2>Portfolio Website</h2>
+                            <p>A personal website to showcase my skills,
+                                projects, and experience.</p>
+                                <ul class="project-tech">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                                <a
+                                class="project-button"
+                                 href="https://github.com/lubnaturkmany/portfolio.git"
+                                 target="_blank"
+                                 rel="noopener noreferrer"
+                                 >
+                                 View on GitHub ↗
+                                </a>
+                        </div>
+                    </div>  
+            </div>
+        </section>
+        
+        <section id="contact" class="contact-section">
+            <h2 class="contact-title">Get In Touch</h2>
+            <p class="contact-description">
+                Feel free to connect with me through any of these platforms.
+            </p>
+            <div class="contact-container">
+                <a
+                class="contact-card"
+                href="https://github.com/lubnaturkmany"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                <span class="contact-icon">&lt;/&gt;</span>
+                <h3>GitHub</h3>
+                <p>Explore my projects</p>
+                <span class="contact-link">Visit Profile ↗</span>
+                </a>
+                <a
+                class="contact-card" 
+                href="https://www.linkedin.com/in/lubna-turkmany"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                <span class="contact-icon">in</span>
+                <h3>LinkedIn</h3>
+                <p>Let's connect professionally</p>
+                <span class="contact-link">Visit Profile↗ </span>
+                </a>
+                <a
+                class="contact-card" 
+                href="mailto:lubnaturkmany@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                <span class="contact-icon">
+                 &#9993;
+                </span>
+                <h3>Email</h3>
+                <p>Send me a message</p>
+                <span class="contact-link">Contact Me ↗</span>
+                </a>
+            </div>
+        </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <p>© 2026 Lubna Turkmani. All rights reserved.</p>
     </footer>
 
