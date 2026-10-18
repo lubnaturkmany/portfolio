@@ -8,3 +8,5 @@ themeToggle.addEventListener("click", function(){
         themeToggle.textContent="Dark Mode";
     }
 });
+const currentYear = document.getElementById("currentYear");
+currentYear.textContent = new Date().getFullYear();
