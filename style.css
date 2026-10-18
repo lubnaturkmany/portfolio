@@ -35,7 +35,7 @@
 
 /*DARK MODE */
 
-html[data-theme="dark"] {
+body.dark-mode {
     color-scheme: dark;
 
     --page-bg: #0b1220;
@@ -132,12 +132,12 @@ section {
     display: flex;
     align-items: center;
     gap: 30px;
-    padding-right: 300px;
+    padding-right: 80px;
 }
 
 .nav-links a {
     color: var(--nav-text);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -519,9 +519,12 @@ section {
     /* Header */
 
     .navbar {
-        flex-direction: column;
-        gap: 12px;
-        padding: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        gap: 10px;
+        padding-block: 14px;
     }
 
     .brand {
@@ -530,9 +533,12 @@ section {
     }
 
     .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
         padding-right: 0;
     }
 
@@ -680,4 +686,21 @@ section {
     .footer p {
         font-size: 12px;
     }
+}
+
+#themeToggle {
+    padding: 10px 16px;
+    margin-right: 60px;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+}
+
+#themeToggle:hover {
+    opacity: 0.85;
 }
